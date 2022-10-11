@@ -2,8 +2,8 @@ package IntroductiontoJava;
 
 import java.util.Scanner;
 
-public class ChangeMoney{
-    public static void main(String[] args){
+public class ChangeMoney {
+    public static void main(String[] args) {
         double vnd = 23000;
         double usd;
         Scanner sc = new Scanner(System.in);
