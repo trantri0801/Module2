@@ -6,7 +6,7 @@ public class AddArray {
     public static void main(String[] args) {
         int[] array = {10, 4, 6, 7, 8, 0, 0, 0, 0, 0};
         int index = 0;
-        int temp = array.length-1;
+        int temp = array.length - 1;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the element to be deleted: ");
         int number = sc.nextInt();
@@ -15,9 +15,8 @@ public class AddArray {
             System.out.println("Enter position to insert: ");
             index = sc1.nextInt();
         } while (index <= 1 && index >= array.length - 1);
-
         while (temp >= index) {
-            array[temp] = array[temp-1];
+            array[temp] = array[temp - 1];
             temp = temp - 1;
         }
         array[index] = number;
