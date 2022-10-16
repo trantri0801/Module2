@@ -7,7 +7,7 @@ public class ChangeMoney {
         double vnd = 23000;
         double usd;
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Nhap so tien bang USD: ");
+        System.out.print("Nhap so tien bang USD: ");
         usd = sc.nextDouble();
         double change = usd * vnd;
         System.out.print("Gia tri VND bang " + change);

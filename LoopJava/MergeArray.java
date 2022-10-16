@@ -20,15 +20,11 @@ public class MergeArray {
             index1 = sc1.nextInt();
             array2[j] = index1;
         }
-        for (int h = 0; h < 5; h++) {
-            array3[h] = array1[h];
-        }
-        for (int f = 0; f < 7; f++) {
-            array3[f + 5] = array2[f];
-        }
+        System.arraycopy(array1, 0, array3, 0, 5);
+        System.arraycopy(array2, 0, array3, 5, 7);
         System.out.print("Array3 bao gom: ");
-        for (int g = 0; g < array3.length; g++) {
-            System.out.print(array3[g] + ", ");
+        for (int i : array3) {
+            System.out.print(i + ", ");
         }
     }
 }

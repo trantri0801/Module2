@@ -18,8 +18,8 @@ public class DeleteArray {
         for (; index < array.length - 1; index++) {
             array[index] = array[index + 1];
         }
-        for (int k = 0; k < array.length; k++) {
-            System.out.print(array[k] + ", ");
+        for (int i : array) {
+            System.out.print(i + " ");
         }
     }
 }
