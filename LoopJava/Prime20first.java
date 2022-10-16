@@ -1,6 +1,6 @@
 package LoopJava;
 
-public class Prime_20first {
+public class Prime20first {
     public static void main(String[] args) {
         int count = 1;
         for (int n = 2; count <= 20; n++) {

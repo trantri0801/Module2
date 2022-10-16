@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MinArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Scanner sc1 = new Scanner(System.in);
+        Scanner scr = new Scanner(System.in);
         int size;
         System.out.println("Nhap do dai cua mang: ");
         size = sc.nextInt();
@@ -13,7 +13,7 @@ public class MinArray {
         int index;
         for (int i = 0; i < size; i++) {
             System.out.println("Enter the element of the array 1: ");
-            index = sc1.nextInt();
+            index = scr.nextInt();
             array[i] = index;
         }
         for (int i : array) {

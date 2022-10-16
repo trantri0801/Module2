@@ -2,9 +2,11 @@ package Array;
 
 import java.util.Scanner;
 
-public class Array2c {
+public class SumColumn {
     public static void main(String[] args) {
-        int column, row;
+
+        int column, row, temp;
+        float sum = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter column: ");
         column = Integer.parseInt(sc.nextLine());
@@ -17,21 +19,20 @@ public class Array2c {
                 array[i][j] = Float.parseFloat(sc.nextLine());
             }
         }
-        System.out.println("Mang vua nhap: ");
+        System.out.print("In mang\n");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 System.out.print(array[i][j] + "\t");
             }
             System.out.println("\n");
         }
-        float max = array[0][0];
+        do {
+            System.out.println("Ban muon tinh tong cot may: ");
+            temp = Integer.parseInt(sc.nextLine());
+        } while (temp >= column);
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-                if (max < array[i][j]) {
-                    max = array[i][j];
-                }
-            }
+            sum = sum + array[i][temp];
         }
-        System.out.println("Phan tu lon nhat trong mang la: " + max);
+        System.out.println("Tong cua cot " + temp + " bang = " + sum);
     }
 }
