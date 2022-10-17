@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class Array2c {
+public class TwoArray {
     public static void main(String[] args) {
         int column, row;
         Scanner sc = new Scanner(System.in);
