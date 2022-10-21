@@ -1,8 +1,13 @@
 package Demo;
 
 public class Test {
-     static int x = 5;
     public static void main(String[] args) {
-        System.out.println(x);
+        int[] a = {50, 100};
+        m(a);
+        System.out.println(a[0]);
+    }
+
+    static void m(int[] x) {
+        x[0] = 200;
     }
 }
