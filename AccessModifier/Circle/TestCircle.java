@@ -1,4 +1,6 @@
-package AccessModifier;
+package AccessModifier.Circle;
+
+import AccessModifier.Circle.Circle;
 
 public class TestCircle {
     public static void main(String[] args) {

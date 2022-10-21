@@ -1,4 +1,6 @@
-package AccessModifier;
+package AccessModifier.Student;
+
+import AccessModifier.Student.Student;
 
 public class Test {
     public static void main(String[] args) {

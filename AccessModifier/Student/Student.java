@@ -1,4 +1,4 @@
-package AccessModifier;
+package AccessModifier.Student;
 
 public class Student {
     private String name = "John";
