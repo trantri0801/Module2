@@ -1,7 +1,7 @@
 package AccessModifier.Circle;
 
 public class Circle {
-    private double radius = 1.0;
+    private static double radius = 1.0;
     private String Color = "red";
 
     public double getRadius() {
