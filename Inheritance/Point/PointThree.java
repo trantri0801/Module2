@@ -1,5 +1,7 @@
 package Inheritance.Point;
 
+import java.util.Arrays;
+
 public class PointThree extends PointTwo{
     private float z = 0.0f;
 
@@ -21,11 +23,12 @@ public class PointThree extends PointTwo{
     }
 
     public float[] getXY() {
-        return new float[]{
+        float[] array = {
                 super.getX(),
                 super.getY(),
                 this.getZ()
         };
+        return array;
     }
 
     @Override
@@ -39,6 +42,7 @@ class Main{
         System.out.println(point3D);
 
         point3D = new PointThree(1.5f, 7.6f, 5.9f);
-        System.out.println(point3D);
+        System.out.print(Arrays.toString(point3D.getXY()));
+        
     }
 }
