@@ -26,16 +26,10 @@ public class Palindrome {
 //        System.out.printf(String.valueOf(queue));
         int count = 0;
         while(!stack.isEmpty()){
-            String a = stack.pop();
-            String b = queue.remove();
-            System.out.printf(a);
-            System.out.printf(b);
-            System.out.println("");
-            if (a == b){
+            if (stack.pop().equals(queue.remove()) == true){
                 count++;
             }
         }
-        System.out.printf(String.valueOf(count));
         if (count == m){
             System.out.printf("Day la chuoi palindrome ");
         } else
