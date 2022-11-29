@@ -98,8 +98,15 @@ public class MyList<E> {
         for (int i = index;i < size -1; i++){
             elements[i] = elements[i+1];
         }
-        elements[size - 1] = null;
+        elements[size - 1 ] = null;
         size--;
         return element;
+    }
+
+    public void display(){
+        System.out.println("ID - Name");
+        for (int i = 0; i < this.size(); i++) {
+            System.out.println(this.get(i)+ "-" + this.get(i));
+        }
     }
 }

@@ -19,14 +19,9 @@ public class Palindrome {
             queue.add(String.valueOf(temp.charAt(i)));
         }
         int m = stack.size();
-//        System.out.println("Stack");
-//        System.out.printf(String.valueOf(stack));
-//        System.out.println(" ");
-//        System.out.println("Queue");
-//        System.out.printf(String.valueOf(queue));
         int count = 0;
         while(!stack.isEmpty()){
-            if (stack.pop().equals(queue.remove()) == true){
+            if (stack.pop().equals(queue.remove())){
                 count++;
             }
         }

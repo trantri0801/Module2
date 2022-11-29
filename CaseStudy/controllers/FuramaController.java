@@ -1,10 +1,11 @@
-package controllers;
+package CaseStudy.controllers;
 
 import java.util.Scanner;
 
 public class FuramaController {
     public static void main(String[] args) {
         displayMainMenu();
+
     }
 
     private static void displayMainMenu() {
@@ -31,6 +32,10 @@ public class FuramaController {
                         System.out.println("4. Return main menu");
                         tempOne = input.nextInt();
                         switch (tempOne) {
+//                            EmployeeServiceImpl employess = new EmployeeServiceImpl();
+                            case 1:{
+
+                            }
                             case 4: {
                                 displayMainMenu();
                             }
@@ -77,7 +82,7 @@ public class FuramaController {
                         System.out.println("5. Edit contracts");
                         System.out.println("6. Return main menu");
                         tempFour = input.nextInt();
-                        switch (tempFour){
+                        switch (tempFour) {
                             case 6: {
                                 displayMainMenu();
                             }
@@ -90,7 +95,7 @@ public class FuramaController {
                         System.out.println("2. Display list customers get voucher");
                         System.out.println("3. Return main menu");
                         tempFive = input.nextInt();
-                        switch (tempFive){
+                        switch (tempFive) {
                             case 3: {
                                 displayMainMenu();
                             }
